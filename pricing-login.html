@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards & Centered Login Form</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="pricing-login.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="page-header">
+        <h1>Subscription Plans & Portal</h1>
+        <p>Choose the right plan for your learning journey or sign in to your existing account.</p>
+    </header>
+
+    <main>
+        <!-- 1 & 2. Pricing Section with 3 Cards -->
+        <section class="pricing-section">
+            <h2>Our Pricing Tiers</h2>
+            
+            <div class="pricing-container">
+                <!-- Basic Card -->
+                <div class="price-card">
+                    <h3>Basic</h3>
+                    <p class="price">$9<span class="period">/mo</span></p>
+                    <ul class="features-list">
+                        <li>Access to HTML & CSS Modules</li>
+                        <li>Community Forum Support</li>
+                        <li>Standard Practice Files</li>
+                    </ul>
+                    <button class="plan-btn">Choose Basic</button>
+                </div>
+
+                <!-- Pro Card (Highlighted) -->
+                <div class="price-card pro-card">
+                    <span class="popular-badge">Most Popular</span>
+                    <h3>Pro</h3>
+                    <p class="price">$29<span class="period">/mo</span></p>
+                    <ul class="features-list">
+                        <li>All Basic Features</li>
+                        <li>Advanced JavaScript Modules</li>
+                        <li>Live Code Reviews & Q&A</li>
+                    </ul>
+                    <button class="plan-btn pro-btn">Choose Pro</button>
+                </div>
+
+                <!-- Premium Card -->
+                <div class="price-card">
+                    <h3>Premium</h3>
+                    <p class="price">$59<span class="period">/mo</span></p>
+                    <ul class="features-list">
+                        <li>All Pro Features</li>
+                        <li>1-on-1 Mentorship Sessions</li>
+                        <li>Exclusive Project Workshops</li>
+                    </ul>
+                    <button class="plan-btn">Choose Premium</button>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- 5. Centered Login Form Section -->
+        <section class="login-section">
+            <h2>Member Sign In</h2>
+            
+            <!-- Flex Container for Centering Form Horizontally and Vertically -->
+            <div class="login-wrapper">
+                <form class="login-form" action="#" method="POST">
+                    <h3>Welcome Back</h3>
+                    <p class="form-sub">Enter your credentials to access your dashboard.</p>
+                    
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" name="email" placeholder="student@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" placeholder="••••••••" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Pricing & Login Assignment</p>
+    </footer>
+
+</body>
+</html>

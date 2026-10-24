@@ -1,0 +1,227 @@
+/* pricing-login.css — Assignment 7.2 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7fafc;
+    color: #2d3748;
+    line-height: 1.6;
+    padding: 30px 20px;
+}
+
+.page-header, footer {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 50px 0;
+}
+
+/* ==========================================================================
+   3 & 4. Pricing Cards Flexbox Layout
+   ========================================================================== */
+.pricing-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pricing-container {
+    display: flex;                 /* 3. Flexbox on parent container */
+    justify-content: center;       /* 4. Align horizontally */
+    align-items: stretch;          /* 4. Equal height card stretching */
+    gap: 30px;                     /* Spacing between cards */
+    flex-wrap: wrap;               /* Responsive wrap for smaller screens */
+}
+
+.price-card {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e0;
+    border-radius: 10px;
+    padding: 30px 25px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;        /* 6. Column layout inside card */
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Highlighted Pro Card */
+.pro-card {
+    border: 2px solid #3182ce;
+    background-color: #ebf8ff;
+    box-shadow: 0 10px 15px rgba(49, 130, 206, 0.1);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3182ce;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.price-card h3 {
+    font-size: 1.4rem;
+    color: #1a365d;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+}
+
+.period {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: normal;
+}
+
+.features-list {
+    list-style: none;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.features-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 0.95rem;
+    color: #4a5568;
+}
+
+.plan-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #edf2f7;
+    color: #2d3748;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.plan-btn:hover {
+    background-color: #cbd5e0;
+}
+
+.pro-btn {
+    background-color: #3182ce;
+    color: #ffffff;
+}
+
+.pro-btn:hover {
+    background-color: #2b6cb0;
+}
+
+/* ==========================================================================
+   5. Centered Login Form Layout
+   ========================================================================== */
+.login-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.login-wrapper {
+    display: flex;                 /* 5. Flexbox centering wrapper */
+    justify-content: center;       /* Center horizontally */
+    align-items: center;           /* Center vertically */
+    min-height: 350px;
+}
+
+.login-form {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e0;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;        /* 6. Stack form elements vertically */
+}
+
+.login-form h3 {
+    color: #1a365d;
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.form-sub {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2d3748;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #319795;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #285e61;
+}
